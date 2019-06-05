@@ -1,6 +1,63 @@
-<h2>My Besyaris</h2>
+<body>
+<header> 
+ <div class="header1">
+
+<div class="nav">
+  <input type="checkbox">
+    <span></span>
+    <span></span>
+    <div class="menu">
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">cursos</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">contactos</a></li>
+    </div>
+</div>
+
+  <ul>
+   <li class="loginbutton">
+    <a herf="#">
+     ログイン
+    </a>
+   </li>
+
+   <li class="newbutton">
+    <a herf="#">
+     新規登録
+    </a>
+   </li>
+  </ul>
+ </div>
+</header>
+
+ <div class="title1">
+  <h1>Besyari</h1>
+  <div class="photo1"></div>
+ </div>
+
+    <main>
+        <div class="content">
+            <p>コンテンツ</p>
+        </div>
+        <div class="localNavigation">
+            <p>ローカルナビゲーション</p>
+        </div>
+    </main>
+
+ <footer class="footer1">
+ </footer>
+
 <ul>
 <% @posts.each do |post| %>
 <li><%= post.title %></li>
 <% end %>
+<p>jQuery稼働テスト</p>
+<script type="text/javascript"></script>
 </ul>
+
+
+
+</body>
+
+
