@@ -33,6 +33,8 @@
 
  h1{
     font-size: 160px;
+    text-shadow: 0 0 10px #fffb00, 0 0 20px #fffb00, 0 0 30px #fffb00, 0 0 40px #fffb00, 0 0 70px #fffb00, 0 0 80px #fffb00, 0 0 100px #fffb00, 0 0 150px #fffb00;
+
  }
 ul {
    text-align: right;
@@ -68,17 +70,28 @@ ul {
 
 .title1{
    height: 600px;
-   background: url('IMG_0879.jpg');
+   background: url('nasa.jpg');
    width: 100%;
    height: 600px;
    background-size: cover;
-   filter:brightness(1000%) ;
-  transition: all 5s ease-out;
+   filter:grayscale(100%) ;
+  transition: all 15s ease-out;
 }
 .title1:hover{
   filter:none
 }
 
+.tbox{
+   position: relative;
+    color:#FFF;
+    font-weight: 100;
+    font-size: 200px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+   text-shadow: 0 0 10px #fffb00, 0 0 20px #fffb00, 0 0 30px #fffb00, 0 0 40px #fffb00, 0 0 70px #fffb00, 0 0 80px #fffb00, 0 0 100px #fffb00, 0 0 150px #fffb00;
+
+}
 
 main{
    display: flex;
@@ -119,7 +132,7 @@ main{
 
 .nav {
    position: relative;
-   background-color: rgb(185, 37, 37);
+   background-color: rgb(5, 5, 5);
    padding: 20px;
    transition: 0.5s;
    border-radius: 50px;
@@ -154,7 +167,7 @@ main{
 }
 
 .menu li a:hover {
-   color: #161919;
+   color: #ebee51;
 }
 
 .nav input {
@@ -176,7 +189,7 @@ main{
 }
 
 .nav input:checked ~ span {
-   background-color: #f974a1;
+   background-color: #ebee51;
 }
 
 .nav span:nth-child(2) {
