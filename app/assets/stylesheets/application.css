@@ -32,10 +32,15 @@
 
 
  h1{
-    font-size: 160px;
+   position: absolute;
+   top:440px;
+   left: 0;
+    font-size: 100px;
     text-shadow: 0 0 10px #fffb00, 0 0 20px #fffb00, 0 0 30px #fffb00, 0 0 40px #fffb00, 0 0 70px #fffb00, 0 0 80px #fffb00, 0 0 100px #fffb00, 0 0 150px #fffb00;
 
  }
+
+
 ul {
    text-align: right;
    font-size: 0%;
@@ -69,10 +74,9 @@ ul {
 
 
 .title1{
-   height: 600px;
    background: url('nasa.jpg');
    width: 100%;
-   height: 600px;
+   height: 700px;
    background-size: cover;
    filter:grayscale(100%) ;
   transition: all 15s ease-out;
@@ -81,15 +85,32 @@ ul {
   filter:none
 }
 
-.tbox{
-   position: relative;
+#tbox{
+   position: absolute;
+   top:350px;
+   left: 40%;
     color:#FFF;
     font-weight: 100;
-    font-size: 200px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
     line-height: 1;
-   text-shadow: 0 0 10px #fffb00, 0 0 20px #fffb00, 0 0 30px #fffb00, 0 0 40px #fffb00, 0 0 70px #fffb00, 0 0 80px #fffb00, 0 0 100px #fffb00, 0 0 150px #fffb00;
+   text-shadow: 0 0 10px #fffed6, 0 0 20px #fffed6, 0 0 30px #fffed6, 0 0 40px #fffed6, 0 0 70px #fffed6, 0 0 80px #fffed6, 0 0 100px #fffed6, 0 0 150px #fffed6;
+
+}
+
+.subtitle{
+   position: absolute;
+   top:440px;
+   left: 1%;
+   text-shadow: 0 0 10px #fffed6, 0 0 20px #fffed6, 0 0 30px #fffed6, 0 0 40px #fffed6, 0 0 70px #fffed6, 0 0 80px #fffed6, 0 0 100px #fffed6, 0 0 150px #fffed6;
+}
+
+.subtitle2{
+   position: absolute;
+   top:470px;
+   left: 1%;
+   text-shadow: 0 0 10px #fffed6, 0 0 20px #fffed6, 0 0 30px #fffed6, 0 0 40px #fffed6, 0 0 70px #fffed6, 0 0 80px #fffed6, 0 0 100px #fffed6, 0 0 150px #fffed6;
 
 }
 
