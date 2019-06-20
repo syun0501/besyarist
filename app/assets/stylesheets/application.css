@@ -32,6 +32,7 @@
 
 
  h1{
+    color: #000000;
    position: absolute;
    top:540px;
    left: 0;
@@ -76,19 +77,19 @@ ul {
 .title1{
    background: url('earth.jpg');
    width: 100%;
-   height: 800px;
+   height: 780px;
    background-size: cover;
-   filter:grayscale(100%) ;
-  transition: all 15s ease-out;
+  /* filter:grayscale(100%) ;
+  transition: all 15s ease-out;*/
 }
-.title1:hover{
+/*.title1:hover{
   filter:none
-}
+}*/
 
 #tbox{
    position: absolute;
    top:350px;
-   left: 40%;
+   left: 39%;
     color:#FFF;
     font-weight: 100;
     font-size: 20px;
@@ -110,9 +111,9 @@ ul {
 .subtitle2{
    position: absolute;
    top:570px;
-   left: 5%;
+   left: 9%;
    color: #FFF;
-   /*text-shadow: 0 0 10px #fffed6, 0 0 20px #fffed6, 0 0 30px #fffed6, 0 0 40px #fffed6, 0 0 70px #fffed6, 0 0 80px #fffed6, 0 0 100px #fffed6, 0 0 150px #fffed6;*/
+   text-shadow: 0 0 10px #fffed6, 0 0 20px #fffed6, 0 0 30px #fffed6, 0 0 40px #fffed6, 0 0 70px #fffed6, 0 0 80px #fffed6, 0 0 100px #fffed6, 0 0 150px #fffed6;
 
 }
 
