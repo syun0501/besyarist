@@ -1,4 +1,4 @@
-<body>
+<body onload="Loopmsg();clock();">
 <header> 
  <div class="header1">
 
@@ -25,14 +25,14 @@
 
 
 
+
  <div class="title1">
  <!--<p class="subtitle">意識は高い方が良い</p>-->
  <p class="subtitle2">ディスカッションツール</p>
  <h1>Besyari</h1> 
-
-<body onload="Loopmsg()">
+<h2 id="currentTime"></h2>
 <div id="tbox"></div>
-</body>
+
 
 <div class="photo1"></div>
 
@@ -41,8 +41,12 @@
 
     <main>
         <div class="content">
-            <p>コンテンツ</p>
-           
+            <p id="cont">コンテンツ</p>
+            <div id=light>
+           <p data-text=コンテンツ>コンテンツ</p>
+           </div>
+
+
         </div>
         <div class="localNavigation">
             <p>ローカルナビゲーション</p>

@@ -14,11 +14,15 @@
  *= require_self
  */
 
+
+
+ 
  body{
    min-height: 100vh;
    display: flex;
    flex-direction: column;
    padding: 0;
+   background-color: #000;
 }
 
  header {
@@ -41,6 +45,23 @@
 
  }
 
+ #currentTime {
+   
+  
+      position: relative;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+      top:260px;
+      letter-spacing: 2px;
+      color: yellow;
+      text-shadow: 0 0 1px, 0 0 1.2px, -1px -1px 1px #300, 0 -1px 1px #300, 1px -1px 1px #300, 1px 0 1px #300, 1px 1px 1px #300, 0 1px 1px #300, -1px 1px 1px #300, -1px 0 1px #300, 0 0 1.6px;
+      filter: contrast(1.5)
+    }
+    
+    
+    
 
 ul {
    text-align: right;
@@ -77,7 +98,7 @@ ul {
 .title1{
    background: url('earth.jpg');
    width: 100%;
-   height: 780px;
+   height: 750px;
    background-size: cover;
   /* filter:grayscale(100%) ;
   transition: all 15s ease-out;*/
@@ -88,8 +109,8 @@ ul {
 
 #tbox{
    position: absolute;
-   top:350px;
-   left: 39%;
+   top:780px;
+   left: 42%;
     color:#FFF;
     font-weight: 100;
     font-size: 20px;
@@ -127,16 +148,16 @@ main{
    background-color: #eee;
    text-align: center;
    margin-right: 10px;
-
    position: relative;
-    color:#FFF;
+   padding: 0;
+   margin: 0;
+}
+#cont{
+   color:#FFF;
     font-weight: 100;
     font-size: 20px;
-    padding: 0;
-    margin: 0;
     line-height: 1;
     text-shadow: 0 0 10px #fffb00, 0 0 20px #fffb00, 0 0 30px #fffb00, 0 0 40px #fffb00, 0 0 70px #fffb00, 0 0 80px #fffb00, 0 0 100px #fffb00, 0 0 150px #fffb00;
-
 }
 .localNavigation{
    text-align: center;
@@ -207,7 +228,7 @@ main{
    width: 30px;
    height: 4px;
    border-radius: 50px;
-   background-color: #666;
+   background-color: rgb(255, 255, 255);
    pointer-events: none;
    transition: 0.5s;
 }
@@ -231,3 +252,47 @@ main{
    transform: translateY(0) rotate(45deg);
 }
 
+
+.content p {
+   position: relative;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 8rem;
+   text-align: center;
+   letter-spacing: 2px;
+   color: yellow;
+   text-shadow: 0 0 1px, 0 0 1.2px, -1px -1px 1px #300, 0 -1px 1px #300, 1px -1px 1px #300, 1px 0 1px #300, 1px 1px 1px #300, 0 1px 1px #300, -1px 1px 1px #300, -1px 0 1px #300, 0 0 1.6px;
+   filter: contrast(1.5)
+ }
+ 
+ .content p:before,
+ .content p:after {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   content: attr(data-text)
+ }
+ 
+ .content p:before {
+   color: #000;
+   text-shadow: var(--ShadowC1);
+   z-index: -1
+ }
+ 
+ .content p:after {
+   color: rgba(110, 80, 60, .1);
+   text-shadow: 0 0 .7px, 0 0 1.1px, 0 0 1.1px, 1px -1px 1px rgba(110, 80, 60, .8), -1px 1px 1px rgba(255, 255, 255, .8);
+   filter: url(#light)
+ }
+
+
+ :root {
+   --ShadowC1: 0 0 1px, 2px 0 1px #583008, 0 2px 1px #e8c098, 2px 1px 1px #583008, 1px 2px 1px #e8c098, 2px 2px 1px #487098, 3px 1px 1px #583008, 1px 3px 1px #e8c098, 3px 2px 1px #583008, 2px 3px 1px #e8c098, 3px 3px 1px #487098, 4px 2px 1px #583008, 2px 4px 1px #e8c098, 4px 3px 1px #583008, 3px 4px 1px #e8c098, 4px 4px 1px #487098, 5px 3px 1px #583008, 3px 5px 1px #e8c098, 5px 4px 1px #583008, 4px 5px 1px #e8c098, 5px 5px 1px #487098, 6px 4px 1px #583008, 4px 6px 1px #e8c098, 6px 5px 1px #583008, 5px 6px 1px #e8c098, 6px 6px 1px #487098, 7px 5px 1px #583008, 5px 7px 1px #e8c098, 7px 6px 1px #583008, 6px 7px 1px #e8c098, 7px 7px 1px #487098, 8px 6px 1px #583008, 6px 8px 1px #e8c098, 8px 7px 1px #583008, 7px 8px 1px #e8c098, 8px 8px 1px #487098, 9px 7px 1px #583008, 7px 9px 1px #e8c098, 9px 8px 1px #583008, 8px 9px 1px #e8c098, 9px 9px 1px #487098, 10px 8px 1px #583008, 8px 10px 1px #e8c098, 10px 9px 1px #583008, 9px 10px 1px #e8c098, 10px 10px 1px #487098, 11px 9px 1px #583008, 9px 11px 1px #e8c098, 11px 10px 1px #583008, 10px 11px 1px #e8c098, 11px 11px 1px #487098, 11px 11px 1px #666, 11px 12px 1px #666, 10px 12px 1px #666, 9px 12px 1px #666, 8px 11px 1px #666, 7px 10px 1px #666, 6px 9px 1px #666, 5px 8px 1px #666, 4px 7px 1px #666, 3px 6px 1px #666, 2px 5px 1px #666, 1px 4px 1px #666, 0 3px 1px #666, -1px 2px 1px #666, 20px 8px 8px rgba(0, 0, 0, .7);
+ }
+
+ 
+
+
+
+ 

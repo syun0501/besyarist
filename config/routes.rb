@@ -6,3 +6,8 @@ Rails.application.routes.draw do
   root 'posts#index'
   
 end
+
+
+collection do
+  get 'indexfinish'
+  end
