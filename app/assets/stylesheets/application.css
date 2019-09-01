@@ -35,10 +35,10 @@
  }
 
 
- h1{
+ #besyari{
     color: #000000;
    position: absolute;
-   top:540px;
+   top:590px;
    left: 0;
     font-size: 100px;
     text-shadow: 0 0 10px #fffb00, 0 0 20px #fffb00, 0 0 30px #fffb00, 0 0 40px #fffb00, 0 0 70px #fffb00, 0 0 80px #fffb00, 0 0 100px #fffb00, 0 0 150px #fffb00;
@@ -152,6 +152,70 @@ main{
    padding: 0;
    margin: 0;
 }
+
+
+.cp_tab *, .cp_tab *:before, .cp_tab *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_tab {
+	margin: 1em auto;
+}
+.cp_tab > input[type='radio'] {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+	        appearance: none;
+	display: none;
+}
+.cp_tab .cp_tabpanel {
+	display: none;
+}
+.cp_tab > input:first-child:checked ~ .cp_tabpanels > .cp_tabpanel:first-child,
+.cp_tab > input:nth-child(3):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(2),
+.cp_tab > input:nth-child(5):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(3),
+.cp_tab > input:nth-child(7):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(4),
+.cp_tab > input:nth-child(9):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(5),
+.cp_tab > input:nth-child(11):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(6) {
+	display: block;
+}
+.cp_tab > label {
+	position: relative;
+	display: inline-block;
+	padding: 15px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-bottom: 0;
+}
+.cp_tab > label:hover,
+.cp_tab > input:focus + label {
+	color: #0066cc;
+}
+.cp_tab > input:checked + label {
+	margin-bottom: -1px;
+	border-color: #cccccc;
+	border-bottom: 1px solid #ffffff;/*背景色と同じ*/
+	border-radius: 6px 6px 0 0;
+}
+.cp_tab .cp_tabpanel {
+	padding: 0.5em 1em;
+	border-top: 1px solid #cccccc;
+}
+@media (max-width: 480px) {
+	.cp_tab {
+		width: 100%;
+		font-size: 0.8em;
+	}
+	.cp_tab label {
+		padding: 0.5em;
+	}
+}
+
+
 #cont{
    color:#FFF;
     font-weight: 100;
@@ -253,7 +317,7 @@ main{
 }
 
 
-.content p {
+.content #cont {
    position: relative;
    font-family: sans-serif;
    font-weight: bold;
@@ -265,8 +329,8 @@ main{
    filter: contrast(1.5)
  }
  
- .content p:before,
- .content p:after {
+ .content #cont:before,
+ .content #cont:after {
    position: absolute;
    left: 0;
    right: 0;
@@ -274,13 +338,13 @@ main{
    content: attr(data-text)
  }
  
- .content p:before {
+ .content #cont:before {
    color: #000;
    text-shadow: var(--ShadowC1);
    z-index: -1
  }
  
- .content p:after {
+ .content #cont:after {
    color: rgba(110, 80, 60, .1);
    text-shadow: 0 0 .7px, 0 0 1.1px, 0 0 1.1px, 1px -1px 1px rgba(110, 80, 60, .8), -1px 1px 1px rgba(255, 255, 255, .8);
    filter: url(#light)
