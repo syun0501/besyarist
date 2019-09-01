@@ -29,7 +29,7 @@
  <div class="title1">
  <!--<p class="subtitle">意識は高い方が良い</p>-->
  <p class="subtitle2">ディスカッションツール</p>
- <h1>Besyari</h1> 
+ <h1 id="besyari">Besyari</h1> 
 <h2 id="currentTime"></h2>
 <div id="tbox"></div>
 
@@ -40,13 +40,41 @@
 
 
     <main>
-        <div class="content">
-            <p id="cont">コンテンツ</p>
-            <div id=light>
-           <p data-text=コンテンツ>コンテンツ</p>
+       <div class="content">
+        <p id="cont">コンテンツ</p>
+          <div id=light>
+             <a href="indexfinish.html.erb">とーぶ</a>
            </div>
 
-
+           
+           <div class="cp_tab">
+	<input type="radio" name="cp_tab" id="tab1_1" aria-controls="first_tab01" checked>
+	<label for="tab1_1">First Tab</label>
+	<input type="radio" name="cp_tab" id="tab1_2" aria-controls="second_tab01">
+	<label for="tab1_2">Second Tab</label>
+	<input type="radio" name="cp_tab" id="tab1_3" aria-controls="third_tab01">
+	<label for="tab1_3">Third Tab</label>
+	<input type="radio" name="cp_tab" id="tab1_4" aria-controls="force_tab01">
+	<label for="tab1_4">Force Tab</label>
+	<div class="cp_tabpanels">
+		<div id="first_tab01" class="cp_tabpanel">
+		<h2>First Tab</h2>
+		<p>First Tab text</p>
+		</div>
+		<div id="second_tab01" class="cp_tabpanel">
+		<h2>Second Tab</h2>
+		<p>Second Tab text</p>
+		</div>
+		<div id="third_tab01" class="cp_tabpanel">
+		<h2>Third Tab</h2>
+		<p>Third Tab text</p>
+		</div>
+		<div id="force_tab01" class="cp_tabpanel">
+		<h2>Force Tab</h2>
+		<p>Force Tab text</p>
+		</div>
+	</div>
+</div> 
         </div>
         <div class="localNavigation">
             <p>ローカルナビゲーション</p>
