@@ -16,7 +16,8 @@
 </div>
 
  <div class="flex flex--column flex--gap flex--row@sm">
-  <button class="btn btn--subtle">新規登録</button>
+  <%= button_to "新規登録", {controller: 'users', action: 'new'}, {method: :get, class: "btn btn--subtle"} %>
+  <!--<button type="button" class="btn btn--subtle" onclick="location.href=’http://localhost:3000/users/new’ ">新規登録</button>-->
   <button class="btn btn--primary">ログイン</button>
 </div> 
    
